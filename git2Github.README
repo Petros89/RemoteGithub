@@ -1,0 +1,25 @@
+#!/bin/sh
+
+git init
+
+#Remote the files related with git
+#rm -rf .git
+
+#Do the commit again
+git add . && git commit -m "your commit message"
+
+#Add the git URL and try to push again
+git remote add origin "copy the Link of the repository on Github"
+
+#And then try to push again
+git push -u origin master -f
+
+
+###########
+#DEBUGGING#
+###########
+
+# If you face problems do the followings for username and e-mail veification
+
+# git config --global user.email "your github email"
+# git config --global user.name "your github username"
